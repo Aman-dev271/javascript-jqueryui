@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script>
+        function fucn(){
+            let a = document.getElementById("uname").value;
+            console.log(a);
+            let b =document.getElementById('pass').value;
+            let ef = document.getElementById('input');
+            
+            
+            if(a.trim()== "" || b.trim()=="" || ef==null){
+                alert("this is not possible");
+                myobj = [];
+            }
+            else{
+                alert("good");
+                myobj=JSON.parse(ef)
+            }
+            let c = {
+                user :a.value,
+                pass:b.value           
+         }
+       myobj.push(c);
+       localStorage.setItem('input' , myobj);
+        
+
+         
+        
+        }
+    </script>
+</head>
+<body>
+    
+        <input type="text"  id = "uname" placeholder="EnterYour userame">
+        <input type="text"placeholder="Enter your password" id = "pass">
+        <button onclick ="fucn()">click me</button>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regular expression</title>
+    <script>
+        function fun(){
+            var Username = document.getElementById("item1").value;
+            var password = document.getElementById("item2").value;
+            // var regs = /AMAN/i;
+            // var regs = /[0-4]ab[]4-9]aman/i;
+            // var regs = /[^a-y]aman/i;
+            // var regs = /^[1-6]aman[9]$/i;
+            // var regs = /^[7-9][\w]{9}$/
+            var regs = /([a-zA-Z0-9\.-]+)@([a-zA-Z]+).([a-z]{2,8}.([a-z]{2,8}))/i;
+
+            if(regs.test(Username)){
+                document.getElementById('error').innerHTML="this is valid";
+           document.getElementById("item1").style.border = "2px solid green" 
+        }else{
+            document.getElementById("item1").style.border = "2px solid red";
+            let a = document.getElementById("error").innerHTML = "this is wrong";
+            a.style.color = "red";
+        }
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter  your Username" id="item1">
+    <input type="text "placeholder="Enter Your number" id = "item2">
+    <button type="submit" onclick="fun()">click me</button> 
+    <h5 id="error"></h5>
+</body>
+</html>

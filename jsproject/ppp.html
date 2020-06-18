@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user name password</title>
+</head>
+<body>
+  <form >
+    <input type="text" placeholder="Enetr Your Username" id ="uname">
+    <br>
+    <input type="password" placeholder="Enter your Password" id = "pass">
+    <br>
+    <button onclick="setitem()">click me </button>
+    </form>
+    <script>
+
+        function setitem(index) {
+
+let username = document.getElementById("uname");
+let password = document.getElementById('pass');
+let per = /^[@!#$%^&*]/;
+console.log(per,typeof(per))
+
+
+let user = localStorage.getItem("user");
+
+if (user != null || username.value.trim() != null ||password.value.trim() != null  ) {
+  alert("nothing to show here")
+  userdetail= [];
+  
+  
+}if(per.includes(username.value)){
+  alert("good you inclde the special charactors");
+  userdetail = JSON.parse(user);
+}
+ else {
+    alert("you are doing writing")
+ 
+}
+ myobj = {
+uername : username.value,
+  password : password.value
+}
+userdetail.push(myobj);
+localStorage.setItem("user", JSON.stringify(userdetail));
+username.value = " ";
+password.value = " "; 
+}
+
+    </script>
+</body>
+</html>

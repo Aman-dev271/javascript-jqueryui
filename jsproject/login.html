@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG in Page</title>
+    <script>
+        let user = localStorage.getItem("user");
+console.log(user.this.index());
+let userpass = localStorage.getItem("password");
+console.log(userpass);
+function login(){
+    let user = localStorage.getItem("user");
+    let userpass = localStorage.getItem("password");
+    let userName = document.getElementById("username").value;
+    let userPassword = document.getElementById("password").value;
+    if(user.includes(userName) && user.includes(userPassword)){
+        alert("scsessfully logged in")
+    }
+    else{
+        alert("INVALID CREDENTIALS")
+    }
+}
+    </script>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Enter Your username">
+    <br>
+    <input type="password" id="password" placeholder="Enter your password">
+    <br>
+    <button  id="${index}"onclick="login(this.id)">Click here to login</button>
+</body>
+</html>

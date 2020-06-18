@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validations</title>
+    <script>
+        function func() {
+           
+            let a = document.getElementById("input1").value;
+            let b = document.getElementById("input2").value;
+            if(a.trim()==""){
+               document.getElementById("error").innerHTML = "Blank is not valid";
+               document.getElementById("lb").style.visibility = "visible";
+               document.getElementById("input1").style.border = "solid 2px red";
+
+                return false;
+            }
+            else if (b.trim() == ""){
+                document.getElementById("error").innerHTML = "Blank is not valid";
+                document.getElementById("lb2").style.visibility = "visible";
+                document.getElementById('input2').style.border = "2px solid red";
+               
+                return false;
+            }
+         else if(b.length < 5){
+                alert("password is too short");
+               
+                return false;
+
+            }
+           
+            else{
+                alert("right")
+                return true;
+            }
+
+            
+            
+        }
+
+    </script>
+</head>
+<body>
+    <form action="aman.html" onsubmit ="return func()">
+
+    <input type="text" id="input1" placeholder="Enter your username">
+    <label id="lb" style="visibility: hidden; COLOR:GREEN;">INVALID INPUT</label>
+    <br>
+    <input type="password" id="input2" placeholder="enter password">
+    <label id ="lb2" style="visibility: hidden; COLOR:GREEN;">invalid credential plese check below what error we get</label>
+    
+    <br>
+    <button type="submit">click me</button>
+</form>
+<h4 id="error" style="color:red"></h4>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form vailidations</title>
+    <script>
+        function validate() {
+            
+            var username = document.getElementById("item1").value;
+            var password = document.getElementById("item2").value;
+            if(username.trim() =="" || password.trim() =="")
+            {
+                alert("this is wrong match");
+                return false;
+       } 
+       else if(password.length < 5) {
+           document.getElementById("lbid").style.visibility = "visible";
+      document.getElementById('error').innerHTML ="password should be greater then 5 charactors";
+document.getElementById('item2').style.border = "3px solid red";
+           return false;
+           
+       }
+     else{
+           alert("good sir")
+           return true;
+       }
+
+ }
+           
+
+                  </script>
+
+                    </head>
+
+<body>
+   
+    <form action="aman.html" onsubmit="return validate()">
+        
+        <input id="item1" type="username" placeholder="Enter you username">
+        <label id = "lbid1" style="color:green; visibility: hidden;">Invalid</label>
+        <input id="item2" type="password" placeholder="Enter the password">
+        <label id = "lbid" style="color:green; visibility: hidden;">Invalid plese check your error give below</label>
+        <button type="submit">click me</button>
+    </form> 
+
+    
+    <h5 id ="error"></h5>
+
+</body>
+
+</html>

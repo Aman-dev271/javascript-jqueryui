@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manupulations</title>
+    <link rel="stylesheet" href="t.css">
+    <script src="jscdn/jquery.js"></script>
+    <script>
+        // in the jquery we can manupulate our dom by the 4 typs
+        // 1.text() , 2. html() , 3.attr() (id ,class etc plceholder ) ,4.css()
+        $(document).ready(function () {
+            $("#aman").click(function () {
+                //   $("#items1").text("this is<b>class</b> amandeep");
+                // alert($("#items1").attr("class"));
+                alert($("#items2").css("color"));
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="amandeep" id="items1">this is item no1</div>
+    <div class="item" id="items2">this is item no2</div>
+    <div class="item" id="items3">this is item no3</div>
+    <button id="dom">
+        clickme to see
+    </button>
+    <button id="aman">
+        clickmeto show
+    </button>
+</body>
+
+</html>

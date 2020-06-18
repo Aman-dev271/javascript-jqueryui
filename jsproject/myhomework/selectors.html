@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selcetors in jquery</title>
+    <script src="jscdn\jquery.js"></script>
+    <script > 
+    $(document).ready(function(){
+        // $(".litem:even").css("color","red");
+    //     function fun1() {
+            
+        
+    //     $("li").css("color","red");
+    // }
+    // $("button").click(fn1)
+    //     function fn1() {
+    //         $(".litem").css("color","red");
+            
+    //     }
+    // $("button").mouseover(fn1)
+    //     function fn1() {
+    //         $(".litem").css("color","red");
+            
+    //     }
+
+    // $("button").mouseleave(fn2)
+    //     function fn1() {
+    //         $(".litem").css("color","blue");
+            
+    //     }
+    //     $("button").hover(fn1 , fn2)
+    //     $("button").mouseover(fn1)
+    //     function fn1() {
+    //         $(".litem").css("color","red");
+            
+    //     }
+
+    // $("button").mouseleave(fn2)
+    //     function fn2() {
+    //         $(".litem").css("color","blue");
+            
+    //     }
+    $("button").click(function () {
+        $(".red").slideUp();
+        
+    });
+    $("#btn").click(function () {
+        $(".red").slideDown();
+        
+    });
+    jQuery("#btn1").click(function () {
+        $(".red").slideToggle();
+        
+    });
+
+    
+    });
+    </script>
+ 
+</head>
+<body>
+    <div class="red">
+        <li class="litem" id="item1">this is our list1</li>
+        <li class="litem" id="item2">this is our list2</li>
+        <li class="litem" id="item3">this is our list3</li>
+        <li class="litem" id="item4">this is our list4</li>
+        <li class="litem" id="item5">this is our list5</li>
+        <li class="litem" id="item6">this is our list6</li>
+    </div>
+        <div class="divitem" id="itwm1">this is our1</div>
+<div class="divitem" id="itwm2">this is our2</div>
+<div class="divitem" id="itwm3">this is our3</div>
+<div class="divitem" id="itwm4">this is our4</div>
+<div class="divitem" id="itwm5">this is our5</div>
+<div class="divitem" id="itwm6">this is our6</div>
+<div class="divitem" id="itwm7">this is our7</div>
+<div class="divitem" id="itwm8">this is our8</div>
+<div class="divitem" id="itwm9">this is our9</div>
+<button type="submit">click me</button>
+<button type="submit" id="btn">click me</button>
+<button type="submit" id="btn1">click me</butto
+
+ 
+</body>
+</html>

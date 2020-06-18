@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery dom manupulations 1st part</title>
+  <script src="jscdn/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+              $("#aman").css({"color":"red" ,"background-color":"black","font-style":"italic"});
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <h2 id="error"></h2>
+<p id="aman" class="deep" value="singh">this is our<i>aman</i> new page </p>
+<button id="btn">geeting text</button>
+    
+</body>
+</html>

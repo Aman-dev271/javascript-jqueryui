@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jqueryui</title>
+    <link rel="stylesheet" href="aman.css">
+<link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+
+
+    <div class="flex">
+        <div id="aman"  class="cube">
+            <p>AMAN</p>
+        </div>
+       
+        <div id="aman1"  class="cube1">
+            <p>AMAN</p>
+        </div>
+       
+        <div id="aman2"  class="cube2">
+    <p>AMAN</p>
+        </div>
+    </div>
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#aman').mouseover(function(){
+                $("#aman").animate({
+                   'margin-left':'120px',
+                opacity:'0.5'
+                },1000 , function () {
+                    alert("this is complete after the second")
+                    
+                })
+                
+            });
+            $('#aman1').mouseover(function(){
+                $("#aman1").animate({
+                    'margin-left':'120px',
+                    'margin-top':'10px',
+               opacity:'0.5',
+               'background-color':'yellow',
+                    
+
+                },1000            
+               
+                );
+                    
+                    
+                
+            });
+            $('#aman2').mouseover(function(){
+            //     $("#aman2").animate({
+            //         'margin-left':'120px',
+            //         'margin-top':'10px',
+            //   opacity:'0.5'
+            //     },1000,(function () {
+            //         alert("this is also complete after the some seconds")
+                    
+            //     })
+            //     );
+            // chaining function 
+            $('#aman2').slideUp(2000).slideDown(2000).fadeOut(2000).fadeIn(1000);
+                
+            });
+            // alert("hii");
+        });
+    </script>
+</body>
+</html>

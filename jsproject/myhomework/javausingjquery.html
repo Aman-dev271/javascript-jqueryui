@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery1stprog</title>
+    <script src="jquery.js"></script>
+    <script>
+        //  $(document).ready(function() {  
+//  $("p").css("background-color", "red");  
+// $("p").hide(); 
+// $("p").show(); 
+// $("p").fadeToggle(); 
+// $("p").fadeIn(); 
+// });
+let a = $("p")
+// console.log(a);
+// function aman() {
+//     // $('p').fadeOut()
+//     // $("p").css("background-color", "red"); 
+//     $("p").css("color", "red"); 
+    
+// } 
+$(Document).ready(function() {
+$("#hide").click(function(){
+    $("p").hide(1000);
+});
+$("#show").click(function(){
+    $("p").show(1000); 
+});
+});
+ 
+
+    </script>
+</head>
+<body>
+    <div id="fade" 
+    <p class="pehra" id="pehra1">this is our first pehra</p>
+    <p class="pehra" id="pehra2">this is our second pehra</p>
+    <p class="pehra" id="pehra3">this is our theired pehra</p>
+    <p class="pehra" id="pehra4">this is our fourth pehra</p>
+  <button type="submit" id = "hide">click me for hide</button>
+  <button type="submit" id = "show">click me for show</button>
+
+</body>
+</html> 
+
+
+
+
+<!-- <!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideDown("slow");  
+    });  
+});  
+</script>  
+ <style>   
+#panel, #flip {  
+    padding: 20px;  
+    text-align: center;  
+    background-color: #00FFFF;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display: none;  
+}  
+</style>  
+</head>  
+<body>  
+<div id="flip">Click to slide down panel</div>  
+<div id="panel">Hello javatpoint.com!   
+It is the best tutorial website to learn jQuery and other languages.</div>  
+</body>  
+</html>  -->
+
+
+
+
+<!-- <!DOCTYPE html>  
+<html>  
+<head>  
+ <title>First jQuery Example</title>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+ </script>  
+ <script type="text/javascript" language="javascript">  
+ $(document).ready(function() {  
+ $("p").css("background-color", "pink");  
+ });  
+ </script>  
+ </head>  
+<body>  
+<p>This is first paragraph.</p>  
+<p>This is second paragraph.</p>  
+<p>This is third paragraph.</p>  
+</body>  
+</html>  -->
+
+
+
+
+
+

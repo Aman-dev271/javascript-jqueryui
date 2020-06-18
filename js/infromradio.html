@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input by radio button</title>
+    <script>
+        function fun(){var gen1 = document.getElementById('gen1')
+var gen2 = document.getElementById('gen2')
+var gen3 = document.getElementById('gen3')
+
+if (gen1.checked == true){
+    document.getElementById("aman").innerText = "you checked"+ ' '+gen1.value
+}
+else if (gen2.checked == true){
+    document.getElementById("aman").innerText = "you checked"+ ' '+gen2.value
+}
+else if (gen3.checked == true){
+    // alert('you checked ' + gen3.value);
+    document.getElementById("aman").innerText = "you checked"+ ' '+gen3.value
+}
+else {
+    alert('you does not select any radio')
+}
+
+
+}
+
+    </script>
+</head>
+<body>
+    choose your Gender<input type="radio" value="Male" id = "gen1"name = "gender"> for Male<input  id = "gen2" value="Female" type="radio" name="gender">For Female<input  id = "gen3" name= "gender" value="other" type="radio">
+<button type="submit" onclick="fun()">click me</button>
+<h3 id="aman"></h3>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover </title>
+    <script>
+        function shownewpic(){
+          document.getElementById('img').src ="css.png";
+        }
+        function showprevpic(){
+            document.getElementById('img').src="logo1.png";
+        }
+    </script>
+</head>
+<body>
+    <img src = "aman.jpg" onmouseover="shownewpic()" onmousedown="showprevpic()" id ="img" width="300px;">
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>effects in the jquery </title>
+    <link rel="stylesheet" href="deep.css">
+</head>
+<body>
+    <div class="d">
+        
+    <div class="it" id="item1">this is item1</div>
+    <div class="it" id="item2">this is item2</div>
+    <div class="it" id="item3">this is item3</div>
+    <div class="it" id="item4">this is item4</div>
+    <div class="it" id="item5">this is item5</div>
+    <button  id="btn">Hide</button>
+    <button  id="btn1">Show</button>
+    <button  id="btn2">Toggle</button>
+    <button  id="btn3">animate</button>
+    <button  id="btn4">Back</button>
+    <script src="jscdn/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#btn").click (function (fn1) {
+            //     $("#item1").slideUp(1000);
+            // });
+            // $("#btn1").click (function (fn2) {
+            //     $("#item1").slideDown(1000);
+            // });
+            // $("#btn2").click (function (fn1,fn2) {
+            //     $("#item1").slideToggle(1000);
+            // });
+            // $("#btn").click (function (fn1) {
+            //     $("#item1").hide(1000);
+            // });
+            // $("#btn1").click (function (fn2) {
+            //     $("#item1").show(1000);
+            // });
+            // $("#btn2").click (function (fn1,fn2) {
+            //     $("#item1").toggle(1000);
+            // });
+            $("#btn").click (function () {
+                $("#item1").fadeOut(1000);
+            });
+            $("#btn1").click (function () {
+                $("#item1").fadeIn(1000);
+            });
+            $("#btn2").click(function() {
+                $("#item1").slideToggle(100);
+                    
+                    
+               
+            });
+            // $("#btn3").click(function(){
+            //     $("#item2").animate({
+            //         'background-color':'red',
+            //         color:'blue',
+            //         left:'120px',
+            //     },1000,(function(){
+            //         alert("this is complete after the 1 sec");
+                    
+            //     })
+            //     );
+                $("#btn3").click(function(){
+                $("#item2").animate({
+                    'background-color':'red',
+                    color:'blue',
+                    right:'120px',
+                },1000,(function(){
+                    alert("this is complete after the 1 sec");
+                    
+                })
+                );
+                
+            })
+            
+$("#btn4").click(function () {
+    $("#item3").slideUp(1000).slideDown(1000).fadeOut(1000).fadeIn(1000);
+    
+});
+
+
+
+            });
+    </script>
+    
+</div>
+</body>
+</html>

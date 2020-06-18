@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in form </title>
+    <script>
+        function validate(){
+       let a  =  document.getElementById('item1');
+       let b  = document.getElementById('item2');
+       if(a.value=="" ||b.value== ""){
+           alert("not allowed this operation ");
+           return false;
+       }
+       else{
+          
+           true;
+       }
+    }
+    </script>
+
+</head>
+<body>
+    <form  onsubmit = "return vailidate()" action=" submit.html">
+        <input type="text" class="in" id="item1" placeholder="Enter the username">
+        <input type="text" class="in" id="item2" placeholder="Enter the password">
+        <button  onclick="validate()">click me</button>
+
+    </form>
+</body>
+</html>

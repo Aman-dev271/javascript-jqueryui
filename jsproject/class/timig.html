@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing function</title>
+    <script>
+        let ID = 0;
+        // function aman(){
+        //     document.getElementById("seconds").innerHTML="this show after 1sec";
+
+        // }
+        // function start(){
+        //    ID =  window.setTimeout(aman, 6000);
+        // }
+        // function stop(){
+        //     window.clearTimeout(ID)
+
+        // }
+
+
+let second = 0;
+        function aman(){
+            document.getElementById("seconds").innerHTML= second+"seconds";
+            second ++;
+        }
+        function start(){
+           ID =  window.setInterval(aman, 1000);
+        }
+        function stop(){
+            window.clearTimeout(ID)
+
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn" onclick="start()">click to start timeimg</button>
+    <h3 id="seconds">scronds</h3>
+    <button id="btn2" onclick="stop()">click to stop timeimg</button>
+
+</body>
+</html>

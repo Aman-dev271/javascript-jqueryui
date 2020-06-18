@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaining effects in the jquery </title>
+    <link rel="stylesheet" href="c.css">
+    <script src="jscdn/jquery.js"></script>
+
+    <script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#items1").slideUp(1000).slideToggle(2000).hide(3000).show(2000);
+    })
+
+});
+    </script>
+</head>
+<body>
+<div class="item" id="items1">this is our dicirion1</div>
+<div class="item" id="items2">this is our dicirion2</div>
+<div class="item" id="items3">this is our dicirion3</div>
+<div class="item" id="items4">this is our dicirion4</div>
+<button id="btn1">click me</button>
+</body>
+</html>

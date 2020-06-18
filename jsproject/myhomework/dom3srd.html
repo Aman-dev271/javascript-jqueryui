@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom3.css">
+    <script src="jscdn/jquery.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#adcls").click(function(){
+                $("#aman").addClass("amandeep");
+            });
+            $("#reclss").click(function(){
+                $("#aman").removeClass("amandeep");
+            });
+            $("#togglecls").click(function(){
+                $("#aman").toggleClass("amandeep");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="deep">
+<p id="aman"> thsi is our phra </p>
+<p >this is our 2nd pehra</p>
+    </div>
+    
+    <button id="adcls">addclass</button>
+    <button id="reclss">removeclas</button>
+    <button id="togglecls">togglecls</button>
+
+</body>
+</html>

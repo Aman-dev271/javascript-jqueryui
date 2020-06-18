@@ -1,0 +1,22 @@
+.it{
+    border:2px solid green;
+    height:100px;
+    width:200px;
+    margin-top: 20px;
+   margin-left: 10px;
+   background-color: aquamarine;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+/* .d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+#item2{
+    position: relative;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery effects</title>
+    <!-- this is how we joint our jquery file int our html page -->
+
+    <script src="jscdn/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+       
+        // 1st i show you how we apply the slide up effect using jquery
+    //     // to do that firstly we have to selcet the the button 
+    // jQuery("#btn1").click(function(){
+    //     // now we apply the slideup efftec 
+    //         // $("#item2").slideToggle(1000);
+    //    $("#item1").slideUp(1000);
+    //    // thats it
+    // });
+    // jQuery("#btn2").click(function(){
+    //     // now we apply the slideup efftec 
+    //         // $("#item2").slideToggle(1000);
+    //    $("#item1").slideDown(1000);
+    //    // thats it
+    // });
+    // jQuery("#toggle").click(function(){
+    //     // now we apply the slideup efftec 
+    //         // $("#item2").slideToggle(1000);
+    //    $("#item1").slideToggle(1000);
+    //    // thats it
+    // });  
+    $("#btn1").click(function() {
+        $("#item1").fadeOut(1000);
+        
+    })
+    $("#btn2").click(function() {
+        $("#item1").fadeIn(1000);
+        
+    });
+    $("#toggle").click(function() {
+        $("#item1").fadeToggle(1000);
+        
+    })
+       
+            
+            
+            
+       
+    });
+
+    </script>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="item" id="item1">this is our item 1</div>
+    <div class="item" id="item2">this is our item 2</div>
+    <div class="item" id="item3">this is our item 3</div>
+    <div class="item" id="item4">this is our item 4</div>
+  <button id="btn1">fadeOut</button>
+  <button id="btn2">fade in</button>
+  <button id="toggle">toggle</button>
+    
+</body>
+</html>

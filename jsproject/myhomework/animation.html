@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniamtion in jquery</title>
+    <link rel="stylesheet" href="b.css">
+    <script src="jscdn/jquery.js"></script>
+    
+    <script>
+$(document).ready(function () {
+    $("#btn2").mousemove(function() {
+        $("#cube").animate({
+           left:'120px',
+           opacity:'0.4',
+           
+
+
+        },1000,(function(){
+        alert("this animation is completed after the one sec");})
+        );
+        
+        
+    });
+    
+});
+
+    </script>
+</head>
+<body>
+    <button id="btn2">click me</button>
+    <div class="item" id="cube">
+        <p>hwllo this is aman</p>
+    </div>
+    
+    
+</body>
+</html>

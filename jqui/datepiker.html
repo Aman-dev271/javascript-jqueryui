@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date piker in the jquery by the ui</title>
+    <link rel="stylesheet" href="style/c.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+  
+</head>
+<body>
+    <div class="aman" id="aman1">
+        <input  id ="date" type="text" placeholder="select your date ">
+        <p>this is our calander</p>
+    </div>
+    
+
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#date").datepicker({
+                numberOfMonths:1,
+                changeYear:true,
+                changeMonth:true,
+                showWeek:true,
+                weekHeader : 'aman',
+                showOtherMonths:true,
+                minDate: new Date(2017 ,0, 3),
+                maxDate :new Date(2020 , 2 ,30),
+            });
+        });
+    </script>
+</body>
+</html>

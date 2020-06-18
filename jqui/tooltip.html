@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date piker in the jquery by the ui</title>
+    <link rel="stylesheet" href="style/c.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+  
+</head>
+<body>
+    <div class="aman" id="aman1">
+        <img src="aman.jpg" alt="amanimage" title="image hai ye aman ki " id="img" class="amandeep">
+        <p>this is our calander</p>
+    </div>
+    
+
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#img").tooltip({
+                content:"this is my pic from my laptop",
+                // show:{effect:"explode" ,duration:300},
+                // show:{effect:"bounce",duration:4300},
+                // show:{effect:"highlight" ,duration:3000},
+                // show:{effect:"blind" ,duration:3000},
+                show:{effect:"bounce",duration:3000},
+                hide:{effect:"explode",duration:3000},
+
+            })
+            
+            
+        });
+    </script>
+</body>
+</html>

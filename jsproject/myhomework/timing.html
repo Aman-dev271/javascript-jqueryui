@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing</title>
+    <script>
+        // var ID =0;
+        // function Refrence(){
+        //     document.getElementById("timing").innerHTML = "timing change after 2 sec";
+
+        // }
+        // function start(){
+        //     ID = window.setTimeout(Refrence , 6000);
+        // }
+        // function stop(){
+        //     window.clearTimeout(ID)
+        // }
+        var ID =0;
+        var seconds = 0;
+        function Refrence(){
+            document.getElementById("timing").innerHTML = seconds+"seconds";
+seconds++
+        }
+        function start(){
+            ID = window.setInterval(Refrence , 10);
+        }
+        function stop(){
+            window.clearTimeout(ID)
+        }
+
+    </script>
+</head>
+<body>
+    <button type="submit" onclick="start()">click to start</button>
+   <h3 id="timing"> seconds</h3>
+    <button type="submit" onclick="stop()">click to start</button>
+
+</body>
+</html>

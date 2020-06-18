@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drowpdown</title>
+    <script>
+       function fun(){
+           let a = document.getElementById('sel');
+           alert(a.options[a.selectedIndex].value)
+           let b = (a.options[a.selectedIndex].value);
+           document.getElementById("#text").innerText=b
+           console.log(b)
+           let v  = localStorage.setItem('compeny' , JSON.stringify(b));
+       }
+
+    </script>
+</head>
+<body>
+  <select id = "sel">Choose your compeny
+      <option value="TCS">TCS</option>
+      <option value="RapsItech">RapsItech</option>
+      <option value="levi's">Levi's</option>
+  </select> 
+  <h2 id="text"></h2>
+  <button onclick="fun()">click me</button> 
+</body>
+</html>

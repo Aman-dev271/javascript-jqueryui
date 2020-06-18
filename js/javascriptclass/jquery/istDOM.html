@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manupualations</title>
+    <script src="jscdn/jquery.js"></script>
+<script>
+//     $(document).ready(function(){
+//         $("h2").text("hello this is<i> perfactlly</i> loaded").css({"color" :"white","background-color":"red" , "font-style":"italic"})
+//        $("#btn").click(function(){
+//        var a = $("#name").val();
+        
+//       $("h2").text("you enter name is:" +a)
+      
+//       var item  = localStorage.getItem("names");
+//       if(item == null){
+//           var obj = [];
+
+//       }
+//       else{
+//           obj = JSON.parse(item);
+//       }
+
+//       let nameobj={
+//           name : a
+//       };
+//       obj.push(nameobj)
+//      localStorage.setItem("names" , JSON.stringify(obj));
+
+
+
+
+
+//      $("#btn").click(function show() {
+//   let item = localStorage.getItem("item");
+//   if(item == null){
+//           var obj = [];
+
+//       }
+//       else{
+//           obj = JSON.parse(item);
+//       }
+//   let html = "";
+//   obj.forEach(function(element) {
+//     html += `
+            
+//                     <div>
+                       
+//                         <p>name is ${element.text}</p>
+//                     </div>
+//                 `;
+//   });
+ 
+// });
+      
+      
+//        });
+
+// $("#btn2").click(function(){
+//     // var a= $("#check").text();
+//     // var a= $("#check").html();
+//     // var a= $("#check").attr();
+//     // var a= $("#check").css();
+//     var v = $("#amandeep").val();
+//     alert($("#check").css("text-color"));
+// })
+      
+//     });
+$(document).ready(function(){
+    $("#btn").click(function(){
+      
+        alert($("#ani").css("font-size","34px"));
+    });
+    $("#btn2").click(function(){
+       
+        alert( $("#ani").css("font-size"))
+    });
+    
+});
+
+</script>
+</head>
+<body>
+    <h2 id="ani">AMANDEEP singh katnoria</h2>
+    <!-- <input id="name" type="text " placeholder="enter your name"> -->
+    <button id="btn">click toset</button>
+    <!-- <h2 id="check">i am amandep<i>sinfgh</i>i from himachal paradesg </h2> -->
+    <button id="btn2">get</button>
+    <!-- <input style="color:rgb(0,233 ,2)" type="text" placeholder  ="enter your number " id="amandeep"> -->
+</body>
+</html>

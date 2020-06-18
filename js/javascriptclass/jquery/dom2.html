@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manupulations</title>
+    <script src="jscdn/jquery.js"></script>
+    <link rel="stylesheet" href="aman.css">
+    <script>
+        $(document).ready(function(){
+            $("#append").click(function(){
+                $("#aman").append("<p>hellow this is amandeep</p>")
+                // $("#aman").prepend("<h2>this is amandeep</h2>")
+            });
+            $("#prepend").click(function(){
+                // $("#aman").append("<p>hellow this is amandeep</p>")
+                $("#aman").prepend("<h2>this is amandeep</h2>")
+            });
+            $("#after").click(function(){
+                // $("#aman").append("<p>hellow this is amandeep</p>")
+                $("#aman").after("<h2>this is amandeep</h2>")
+            });
+            $("#before").click(function(){
+                // $("#aman").append("<p>hellow this is amandeep</p>")
+                $("#aman").before("<h2>this is amandeep</h2>")
+            });
+            // $("#remove").click(function(){
+            //     // $("#aman").append("<p>hellow this is amandeep</p>")
+            //     $("#aman").remove()
+            // });
+            $("#remove").click(function(){
+                // $("#aman").append("<p>hellow this is amandeep</p>")
+                $("#ani").remove()
+            });
+            $("#empty").click(function(){
+                // $("#aman").append("<p>hellow this is amandeep</p>")
+                $("#aman").empty()
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="aman">
+        <p>hello this is amandeep</p>
+        <h3 id = ani>amandeep singh katnoria </h3>
+    </div>
+    <button id="append">append</button>
+    <button id="prepend">Prepend</button>
+    <button id="after">After</button>
+    <button id="before">Before</button>
+    <button id="remove">Remove</button>
+    <button id="empty">Empty</button>
+
+
+</body>
+</html>
